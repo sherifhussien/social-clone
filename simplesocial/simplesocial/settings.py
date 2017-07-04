@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# Django determines the root URLconf module to use.
 ROOT_URLCONF = 'simplesocial.urls'
 
 TEMPLATES = [

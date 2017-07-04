@@ -13,6 +13,14 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+
+"""
+1) the patterns are tested in order
+2) all request methods – POST, GET, HEAD, etc. – will be routed to the same function for the same URL.
+3)Whenever Django encounters include(), it chops off whatever part of the URL matched up to that point and
+  sends the remaining string to the included URLconf for further processing.
+4)In Django 1.9+ you should set the app_name attribute,In Django 1.8 you need to pass the namespace parameter to include()
+"""
 from django.conf.urls import url,include
 from django.contrib import admin
 from simplesocial import views
