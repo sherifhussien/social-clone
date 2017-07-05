@@ -1,6 +1,11 @@
+"""
+from django.contrib.auth.models import User
+get_user_model method will return the currently active user model, settings.AUTH_USER_MODEL default auth.user
+"""
+ from django.contrib.auth.models import User
+
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import UserCreationForm
-# from django.contrib.auth.models import User
 
 class UserCreateForm(UserCreationForm):
     class Meta():
