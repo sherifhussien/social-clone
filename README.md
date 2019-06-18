@@ -1,1 +1,1 @@
-# socialclone with Django
+# Socialclone with Django
